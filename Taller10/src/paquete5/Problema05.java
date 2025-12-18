@@ -18,7 +18,7 @@ public class Problema05 {
             {"Carrie Burton", "Lauren Rice"},
             {"Emma Escobar", "Lori Flores"},
             {"Steven West", "Toni Martin"}};
-        
+
         String mensaje = "";
 
         for (int fila = 0; fila < estudiantes.length; fila++) {
@@ -29,7 +29,8 @@ public class Problema05 {
                     case "S":
                     case "P":
                     case "T":
-                        mensaje = mensaje + String.format("- %s\n", nombreCompleto);
+                        mensaje = mensaje + String.format("- %s\n",
+                                nombreCompleto);
                         break;
                     default:
                         break;
@@ -37,6 +38,7 @@ public class Problema05 {
                 }
             }
         }
+        System.out.println("NOMBRES CON S - T - P");
         System.out.printf(mensaje);
-    }
+    }  
 }
