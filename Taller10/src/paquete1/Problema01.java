@@ -21,11 +21,10 @@ public class Problema01 {
             {true, false, false, true, false},
             {true, true, true, true, true},
             {false, true, true, false, true}};
-        
-        
+
         String[] estudiantes = {"Ana", "Luis", "Carlos", "María"};
         int[] totalAsistencias = new int[estudiantes.length];
-        
+
         String estado;
         String mensaje = "";
 
@@ -39,7 +38,7 @@ public class Problema01 {
             totalAsistencias[i] = contador;
         }
 
-        System.out.println("                    -----REPORTE DE ASISTENCIA-----");
+        System.out.println("REPORTE DE ASISTENCIA");
 
         for (int i = 0; i < estudiantes.length; i++) {
             if (totalAsistencias[i] == 5) {
@@ -49,7 +48,8 @@ public class Problema01 {
             }
 
             mensaje = mensaje + String.format("Estudiante: %s\t Días asistidos:"
-                    + " %d\t Estado: %s\n",estudiantes[i], totalAsistencias[i], estado);
+                    + " %d\t Estado: %s\n", estudiantes[i], totalAsistencias[i],
+                    estado);
         }
         System.out.printf(mensaje);
     }
