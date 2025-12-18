@@ -28,7 +28,7 @@ public class Problema04 {
 
         System.out.printf("Ingrese los valores para las matrices A y B (%dx%d):"
                 + "\n", filas, columnas);
-        
+
         for (int indice = 0; indice < filas; indice++) {
             for (int subIndice = 0; subIndice < columnas; subIndice++) {
                 System.out.printf("A[%d][%d]: ", indice, subIndice);
